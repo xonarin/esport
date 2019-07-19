@@ -31,9 +31,12 @@ a{
 }
 
 header{
-    display: flex;
     background-color: rgba(0, 0, 0, 0.75);
     min-height: 76px;
+}
+
+.header__navigation{
+    display: flex;
 }
 
 .header-wrap{
@@ -42,6 +45,8 @@ header{
     min-height: 960px;
     background: url('/img/head-background.png')center no-repeat;
     background-size: cover;
+    margin-top: -77px;
+    z-index: -1;
 }
 
 .head{
@@ -140,7 +145,7 @@ header{
 }
 
 .header__body-info{
-    position: absolute;
+    position: relative;
     top: 260px;
     left: 81px;
     width: 593px;
@@ -447,9 +452,9 @@ header{
 }
 
 .footer{
-    width: 1500px;
+    width: 100%;
     min-height: 500px;
-    background: url('/img/footer-bg.png') 0 0 no-repeat;
+    background: url('/img/footer-bg.png') 0 0 repeat;
     background-color: #000;
     margin-top: -50px;
     position: absolute;
